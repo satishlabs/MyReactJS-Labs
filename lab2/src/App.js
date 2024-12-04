@@ -1,17 +1,24 @@
 
-import { React } from 'react';
 import './App.css';
+import { Component } from 'react';
+import Student from './student/Student';
 
-const App =()=> {
-    const companyName = "SatishLabs";
-    let courseName = "ReactJS";
-  return (
-    <div className="myclass">
-     <p className="myclass1">Welcome to {companyName}!!</p>
-     <p className="myclass2">You are learning {courseName} from Satish Prasad</p>
-    </div>
-  );
-
+class App extends Component{
+  state={
+    companyName:"SatishLabs",
+    trainer:"Satish Prasad"
+  }
+  render(){
+    console.log("I am app component");
+    return(
+      <div className="myheader">
+        <p>Welcome to {this.state.companyName}!!</p>
+        <p>You are learning ReactJS from {this.state.trainer}</p>
+        <br/>
+        <Student/>
+      </div>
+    )
+  }
 }
 
 export default App;
