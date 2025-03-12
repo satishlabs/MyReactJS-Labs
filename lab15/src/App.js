@@ -25,7 +25,7 @@ const App = () =>{
       //CleanUp
       console.log("[App] - Cleanup - 2nd - useEffect()");
     }
-  });
+  },[]);
 
   useEffect(() =>{
     console.log("[App] - 3rd - useEffect()");
@@ -35,7 +35,7 @@ const App = () =>{
       //CleanUp
       console.log("[App] - Cleanup - 3rd - useEffect()");
     }
-  });
+  },[]);
     const showHideCourses = () =>{
       console.log("[App] - showHideCourses()] - Button - Clicked");
       setCourseFlagState(!courseFlagState);

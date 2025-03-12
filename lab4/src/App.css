@@ -1,0 +1,11 @@
+.myheader{
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria;
+}
+
+.mybutton{
+  font-size: 25px;
+  color: white;
+  background-color: red;
+}

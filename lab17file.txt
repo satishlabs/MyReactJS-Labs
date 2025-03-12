@@ -1,0 +1,59 @@
+Lab17: Using Context API for class components:
+-------------------------------------------------
+Working steps:
+-----------------
+1) Copy Lab16 as Lab17
+2)Write appContext.js
+	a)create the Context Object.
+	
+	const myContext = React.createContext();
+	
+   b)Write the component class with state and render()
+	**define the required data in state
+	** return the context Provider from render() function
+	export class MyApplicationData extends Component{
+	
+	  state = {
+	    myLeadList:[
+		{leadId:101,name:"Satish",eamil:"satish@gmail",phone:1111, course:"React"},
+		{},
+		{}
+		]
+	  };
+	  
+	  render(){
+		return(
+		<myContext.Provider value={this.state}>
+			{this.props.children}
+		</myContext.Provider>
+		);
+	  }
+		
+	}
+	c)export the Context Consumer
+	
+	export const MyDataConsumer = myContext.Consumer;
+	//export const MyData = myContext;
+	
+3)Update App.js	
+	*Wrap the App component root element with <MyApplicationData>
+	return(
+      <MyApplicationData>
+      <div className='App Container'>
+        <Header mybrand="Lead Manager"/>
+        <LeadsList/>
+      </div>
+      </MyApplicationData>
+    );
+	
+4)Update LeadList.js
+	**No need to define the state - So remove the State.
+	**Remove deleteMyLead() function
+	** wrap the root of LeadsList with <MyDataConsumer>
+	** access the state from value attribute.
+
+5)Update Lead component
+	**update onDeleteClick() function
+	**Wrap the root of Lead with <MyDataConsumer>
+	** access the State from value attribute
+	

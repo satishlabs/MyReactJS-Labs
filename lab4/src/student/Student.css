@@ -1,0 +1,10 @@
+.mystudent{
+    font-size: 25px;
+    color: red;
+    text-align: left;
+    border: 2px solid blue;
+    padding: 15px;
+    margin-left: 150px;
+    width: 50%;
+}
+

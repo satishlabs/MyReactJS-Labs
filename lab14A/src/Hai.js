@@ -6,7 +6,8 @@ class Hai extends Component{
         super(props);
         console.log(1, "[Hai] - constructor()");
         this.state = {
-           
+           companyName: 'SatishLabs',
+           courseFlag:true,
         }
     }
 

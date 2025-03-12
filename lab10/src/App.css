@@ -1,0 +1,29 @@
+.myclass1{
+    padding: 10px;
+    background-color: lightcyan;
+}
+
+.myclass2{
+    font-size: 25px;
+    font-family: Cambria;
+}
+
+.myblue{
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+.myred{
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+p{
+    font-family: Cambria;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-top: 25px;
+}
