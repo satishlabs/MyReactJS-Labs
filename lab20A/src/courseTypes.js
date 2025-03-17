@@ -1,0 +1,5 @@
+export const UPDATE_CNAME="UPDATE_CNAME";
+export const UPDATE_PRICE="UPDATE_PRICE";
+export const UPDATE_DURATION="UPDATE_DURATION";
+export const UPDATE_TRAINER="UPDATE_TRAINER";
+export const RESET="RESET";
