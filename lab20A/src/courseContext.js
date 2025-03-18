@@ -9,7 +9,7 @@ const myreducer = (currentState,action) =>{
     switch(action.type){
         case UPDATE_CNAME:
                 return {
-                    ...currentState, //Preserve existing state
+                   // ...currentState, //Preserve existing state
                     courseName:action.payload
                 };
         case UPDATE_PRICE:
@@ -52,7 +52,7 @@ export class MyCourseProvider extends Component{
             if(action.type === RESET){
                 this.setState({...this.initialState}); //Reset state
             }else{
-                this.setState(state =>myreducer(state,action));
+                this.setState((state) =>myreducer(state,action));
             }
         }
     }

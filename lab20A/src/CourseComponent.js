@@ -83,14 +83,10 @@ class CourseComponent extends Component{
                                                     <td><button onClick={this.updateTrainer.bind(this,"DS",mydispatch)} className="btn btn-success">Update Trainer</button></td>
                                                 </tr>
                                                 <tr>
-    <td colSpan="2" className="text-center">
-        <button 
-            onClick={() => this.resetState(mydispatch, mycoursetData.initialState)} 
-            className="btn btn-danger">
-            Reset
-        </button>
-    </td>
-</tr>
+                                                <td colSpan="2" className="text-center">
+                                                        <button onClick={() => this.resetState(mydispatch, mycoursetData.initialState)} className="btn btn-danger">Reset</button>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                       
