@@ -5,7 +5,7 @@ import propTypes from 'prop-types'
 const MyTextInput1 = ( {mytype, mylabel, myname, myvalue, myplaceholder, myonChange, myerror}) => {
     return (
         <div className="container col-md-6">
-            <div className="form-group">
+            <div className="form-group"> 
                 <label htmlFor={myname}>{mylabel}</label>
                 <input  type={mytype}
                         name={myname}

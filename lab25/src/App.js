@@ -1,7 +1,11 @@
 
 import { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AddBook from './books/AddBook';
+import TextInputDemo from './mydemos/TextInputDemo';
+import TextAreaDemo from './mydemos/TextAreaDemo';
+import SelectBoxDemo from './mydemos/SelectBoxDemo';
+import RadioButtonDemo from './mydemos/RadioButtonDemo';
+import CheckBoxDemo from './mydemos/CheckBoxDemo';
 
 
 
@@ -21,7 +25,11 @@ class App extends Component{
         <br/>
         </div>
         <div className='card-body'>
-          <AddBook/>
+          <TextInputDemo/>
+          <TextAreaDemo/>
+          <SelectBoxDemo/>
+          <RadioButtonDemo/>
+          <CheckBoxDemo/>
         </div>
       </div>
     );

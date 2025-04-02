@@ -13,12 +13,9 @@ const MyTextInput = (props) => {
                         value={props.myvalue}
                         onChange={props.myonChange}
                         className={
-                            classNames("form-control form-control-lg", {
-                            "is-invalid":props.myerror,
-                            "is-valid": !props.myerror,
-                        })}
+                            classNames("form-control form-control-lg")
+                        }
                 />
-            <div className="text-danger">{props.myerror}</div>
             </div>
         </div>
     );
@@ -34,7 +31,6 @@ MyTextInput.propTypes ={
 
 MyTextInput.defaultProps = {
     mytext:'text',
-    myplaceholder:'',
     myerror:'',
 }
 
